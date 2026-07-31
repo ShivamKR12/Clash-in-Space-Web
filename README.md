@@ -1,5 +1,7 @@
 # Clash in Space
 
+[![pygbag_build](https://github.com/OWNER/REPO/actions/workflows/pygbag.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/pygbag.yml)
+
 A 2D space shooter game built with Python and designed to be played in a web browser.
 
 ## 🚀 Gameplay
@@ -10,16 +12,9 @@ While the exact gameplay mechanics are in the source code which was not provided
 *   Creating explosions upon impact.
 *   An engaging soundtrack during gameplay.
 
-## 🎶 Assets
+## Screenshot
 
-The game includes a variety of assets to create an immersive experience:
-
-*   **Audio:**
-    *   `explosion.wav`: Sound effect for explosions.
-    *   `laser.wav`: Sound effect for firing lasers.
-    *   `game_music.wav`: Background music for the game.
-*   **Graphics:**
-    *   A multi-frame animated sprite for explosions located in `assets/explosion/`.
+![screenshot](screenshots/1.png)
 
 ## 🛠️ Building for the Web
 
