@@ -1,36 +1,82 @@
+<div align="center">
+
 # Clash in Space
 
-[![pygbag_build](https://github.com/OWNER/REPO/actions/workflows/pygbag.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/pygbag.yml)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![pygame-ce](https://img.shields.io/badge/Library-pygame--ce-1D9BF0?logo=pygame&logoColor=white)
+![Web](https://img.shields.io/badge/Target-Web%20Assembly-654FF0)
+![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)
+[![pygbag_build](https://github.com/ShivamKR12/Clash-in-Space-Web/actions/workflows/pygbag.yml/badge.svg)](https://github.com/ShivamKR12/Clash-in-Space-Web/actions/workflows/pygbag.yml)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-A 2D space shooter game built with Python and designed to be played in a web browser.
+</div>
 
-## 🚀 Gameplay
+A classic arcade-style space shooter game built with Python and Pygame Community Edition, optimized for the web. Dodge and destroy asteroids, fight for the high score!
 
-While the exact gameplay mechanics are in the source code which was not provided, based on the assets it is a space-themed game that likely involves:
+<div align="center">
+  <img src="screenshots/1.png" alt="Gameplay Screenshot" width="600">
+</div>
 
-*   Shooting lasers at enemies.
-*   Creating explosions upon impact.
-*   An engaging soundtrack during gameplay.
+## 🚀 Features
 
-## Screenshot
+*   Classic top-down space shooter gameplay.
+*   Engaging sound effects and background music.
+*   Explosive visual effects.
+*   Persistent high scores tracking across sessions.
+*   Playable directly in the web browser.
 
-![screenshot](screenshots/1.png)
+## 🎮 Play Now
 
-## 🛠️ Building for the Web
+You can easily play the game directly in your web browser!
 
-This project uses `pygbag` to build the Python code for a web-based environment (via Emscripten).
+1.  Go to the [**Clash in Space - Web**](https://ShivamKR12.github.io/Clash-in-Space-Web) page.
+2.  Wait for the assets to load and enjoy the game!
 
-To build the project manually, you can use the following commands:
+## 🕹️ How to Play
 
-```bash
-pip install pygbag
-python -m pygbag --build main.py
-```
+*   **Arrow Keys/WASD:** Move your ship.
+*   **Spacebar:** Fire lasers.
+*   **Escape:** Pause/Quit the game.
 
-This will create a `build/web` directory containing the necessary files to run the game in a browser.
+## 🛠️ Building From Source
+
+If you want to run or build the game yourself, you'll need Python 3 and some dependencies.
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/ShivamKR12/Clash-in-Space-Web.git
+    cd Clash-in-Space-Web
+    ```
+
+2.  **Create a virtual environment (recommended):**
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3.  **Install dependencies:**
+    ```sh
+    pip install pygame-ce pygbag
+    ```
+
+4.  **Run the game locally:**
+    ```sh
+    python main.py
+    ```
+
+5.  **Build for the Web:**
+    This project uses `pygbag` to build the Python code for a web-based environment.
+    ```sh
+    python -m pygbag --build main.py
+    ```
+    This will create a `build/web` directory containing the necessary files. You can test it locally using a web server or `python -m pygbag main.py`.
 
 ## ⚙️ Continuous Deployment
 
 The project is configured with a GitHub Actions workflow (`.github/workflows/pygbag.yml`) that automatically builds and deploys the game to GitHub Pages.
 
-A push to the `main.py` file on the `main` branch will trigger the workflow, which builds the application and pushes the contents of the `build/web` directory to the `gh-pages` branch.
+A push to the `main` branch will trigger the workflow, which builds the application and pushes the contents of the `build/web` directory to the `gh-pages` branch.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
