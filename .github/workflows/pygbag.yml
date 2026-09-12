@@ -27,3 +27,11 @@ jobs:
       with:
         branch: gh-pages
         folder: build/web
+
+    - name: Setup Butler
+      uses: remarkablegames/setup-butler@v1
+
+    - name: Publish to itch.io via Butler
+      env:
+        BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+      run: butler push build/web shivamkr12/clash-in-space:html --userversion v${{ github.run_number }}
