@@ -97,7 +97,9 @@ async def main():
     class Game:
         def __init__(self):
             # general setup 
+            pygame.mixer.pre_init(44100, -16, 2, 1024)
             pygame.init()
+            pygame.mixer.set_num_channels(64)
             self.WINDOW_WIDTH, self.WINDOW_HEIGHT = 1280, 720
             self.display_surface = pygame.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
             pygame.display.set_caption('Clash in Space')
